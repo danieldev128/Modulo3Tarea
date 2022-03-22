@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de propinas</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+</head>
+<body>
+        
+    <table id="tablaPrincipal">
+        <tr>
+            <td width="1360" > <div id="titulo"><h1>Calculadora de propinas</h1></div></td>
+        </tr>
+        <tr>
+            <td>
+                <div id="contenedor1">
+                    <h2 >Total de la cuenta</h2>
+                    <input type="text" id="txtTotalCuenta">
+                    <h2>Porcentaje de la propina</h2>
+                    <input type="text" id="txtPorcentajeProp"><br><br>
+                    <button type="button" onclick="calcular()">Calcular</button>
+                    <br>
+                </div>
+                <div id="resumen">
+                    <br>
+                    <h1 id="resumen"> Resumen</h1>
+                    <table id="tablaSecundaria">
+                        <tr>
+                            <td>Total de la cuenta</td>
+                            <td><div id="totalCuenta"></div></td>
+
+                        </tr>
+                        <tr>
+                            <td>Propina</td>
+                            <td><div id="resultadoProp"></div></td>
+                        </tr>
+                        <tr>
+                            <td>Total a Pagar</td>
+                            <td><div id="resultadoPagar"></div></td>
+
+                        </tr>
+                    </table>
+                    <br>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>
